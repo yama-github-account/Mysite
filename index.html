@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自己紹介サイト - 甘鐘るか</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>自己紹介</h1>
+        <nav>
+            <a href="#home">Home</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="flip-card" onclick="this.classList.toggle('flipped');">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="profile.png" alt="プロフィール画像" style="width: 150px;height:150px;">
+                        <h3 id="setu">甘鐘るか</h3>
+                        <p id="setu">コーディングは結構できます。<br>今はイラストに挑戦しています。</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3 id="setu">一言</h3>
+                        <p id="setu">ねむいねぇ。<br>奏可愛いねぇ</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <p>クリックしてコピー: <span id="email" onclick="copyToClipboard('amagane020ruka@gmail.com')">amagane020ruka@gmail.com</span></p>
+            <p>GitHub: <a href="https://github.com/yama-github-account" target="_blank">GitHub</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 甘鐘るか</p>
+    </footer>
+
+    <script>
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                alert('メールアドレスがコピーされました: ' + text);
+            });
+        }
+    </script>
+</body>
+</html>
